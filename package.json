@@ -1,0 +1,39 @@
+{
+  "name": "com.playsolana.psdk",
+  "version": "1.0.4",
+  "displayName": "Play Solana Unity SDK",
+  "description": "A Unity SDK for integrating PSG1 devices with Unity applications.",
+  "keywords": [
+    "solana",
+    "sdk",
+    "unity",
+    "input",
+    "controller"
+  ],
+  "author": {
+    "name": "Play Solana",
+    "url": "https://www.playsolana.com/"
+  },
+  "unity": "6000.0",
+  "dependencies": {
+    "com.unity.inputsystem": "1.11.2"
+  },
+  "repository": {
+    "url": "https://github.com/playsolana/PlaySolana.Unity-SDK",
+    "type": "git",
+    "revision": "c8518694c7fdd2c755755e028e2ec19cdceda19b"
+  },
+  "setupInstructions": [
+    "Clone the repository",
+    "Add this package via Unity Package Manager using the Git URL",
+    "Ensure 'com.unity.inputsystem' is enabled",
+    "Use MyJoystickDevice for custom controller support"
+  ],
+  "samples": [
+    {
+      "displayName": "PSG1 Input Bindings",
+      "description": "Sample project demonstrating how to use PSG1 input bindings. If you have a PSG1 device, you can use this sample to test the input system, otherwise you can create a virtual PSG1 device to test the input system. If you want to test input bindings, don't forget to assign InputActions as the Project-wide Input Actions.",
+      "path": "Samples~/Psg1Input"
+    }
+  ]
+}

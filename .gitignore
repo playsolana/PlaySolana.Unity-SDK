@@ -1,0 +1,68 @@
+# TextMesh Pro
+/TextMesh Pro/
+/TextMesh Pro.meta
+
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+MemoryCaptures/
+UnityCache/
+
+# Crash reports
+sysinfo.txt
+
+# Test results
+/test-results/
+*.testresult.xml
+*.ncrunch*
+*.coverage
+*.coveragexml
+
+# IDE/Editor-specific
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.usertasks
+*.resources
+.idea/
+.vscode/
+
+# Visual Studio Code workspace storage
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Compiled binaries
+*.dll
+*.exe
+*.apk
+*.jar
+*.mdb
+
+# Unity generated
+*.generated.cs
+
+# Packages
+*.unitypackage
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Addressables (optional)
+/ServerData/
+
