@@ -12,6 +12,12 @@ using UnityEngine.InputSystem.Android;
 using UnityEngine.InputSystem.Android.LowLevel;
 
 namespace PlaySolanaSdk {
+    public class PSVariables {
+        public static readonly int PSG1_VENDOR_ID = 0x1234; 
+        public static readonly int PSG1_PRODUCT_ID = 0x5678;
+        public static readonly string PSG1_PRODUCT = "virtual-gamepad";
+    }
+
     [StructLayout(LayoutKind.Sequential)]
 
     public unsafe struct PSG1StateController : IInputStateTypeInfo
@@ -110,21 +116,21 @@ namespace PlaySolanaSdk {
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Initialize() {
-            InputSystem.RegisterLayout<PSG1>(matches: new InputDeviceMatcher()
+            InputSystem.RegisterLayout<PSG1>(
+                matches: new InputDeviceMatcher()
                     .WithInterface("Android")
-                    .WithProduct("virtual-gamepad")
-                    .WithCapability("vendorId", 0x1234)
-                    .WithCapability("productId", 0x5678)
-                    );
+                    .WithProduct(PSVariables.PSG1_PRODUCT)
+                    .WithCapability("vendorId", PSVariables.PSG1_VENDOR_ID)
+                    .WithCapability("productId", PSVariables.PSG1_PRODUCT_ID)
+            );
         }
 
         protected override void FinishSetup() {
             base.FinishSetup();
         }
 
-        public static new PSG1 current { get; private set; }
+        public static new PSG1 current { get; set; }
         public override void MakeCurrent() {
-            base.MakeCurrent();
             current = this;
         }
 
