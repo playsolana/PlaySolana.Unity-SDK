@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML 
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi="http://www.w3.org/2001/XMLSchema-instance"
+    engine="UnityEngine.UIElements" 
+    editor="UnityEditor.UIElements" 
+    noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+    editor-extension-mode="False"
+>
+    <ui:Style src="./Styles.uss" />
+
+    <ui:VisualElement class="root">
+        <ui:VisualElement class="main-container">
+
+
+            <!-- Helper box label -->
+            <ui:Label name="helperBox" text="Click the button below to connect the virtual PSG1 console." />
+
+            <ui:Button text="Connect" name="connectButton"/>
+            <ui:Button text="Disconnect" name="disconnectButton"/>
+
+            <ui:VisualElement class="unknown-container">
+                <ui:Label name="unknownLabel" text="PSG1 Not Connected" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
