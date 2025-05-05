@@ -25,3 +25,7 @@
 # [1.0.4] 2025-04-14
 
 - Fix: Error when building for WebGL
+
+# [1.0.5] 2025-05-05
+
+- Fix: CONTRIBUTING.md Meta file generation to avoid Unity warnings
