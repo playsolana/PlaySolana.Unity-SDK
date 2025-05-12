@@ -1,6 +1,6 @@
 {
   "name": "com.playsolana.psdk",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "displayName": "Play Solana Unity SDK",
   "description": "A Unity SDK for integrating PSG1 devices with Unity applications.",
   "keywords": [
@@ -14,9 +14,10 @@
     "name": "Play Solana",
     "url": "https://www.playsolana.com/"
   },
-  "unity": "6000.0",
+  "unity": "2019.4",
   "dependencies": {
-    "com.unity.inputsystem": "1.11.2"
+    "com.unity.inputsystem": "1.1.1",
+    "com.unity.textmeshpro": "2.1.6"
   },
   "repository": {
     "url": "https://github.com/playsolana/PlaySolana.Unity-SDK",

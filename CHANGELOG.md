@@ -29,3 +29,7 @@
 # [1.0.5] 2025-05-05
 
 - Fix: CONTRIBUTING.md Meta file generation to avoid Unity warnings
+
+# [1.0.6] 2025-05-12
+
+- Fix: Package.json unity version
