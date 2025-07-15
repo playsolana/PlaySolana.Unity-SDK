@@ -1,6 +1,6 @@
 {
   "name": "com.playsolana.psdk",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "displayName": "Play Solana Unity SDK",
   "description": "A Unity SDK for integrating PSG1 devices with Unity applications.",
   "keywords": [

@@ -1,35 +1,50 @@
+# Changelog
 
-# [1.0.0] 2025-03-20
+## [1.1.0] - 2025-06-15
 
-## First Release
+### Added
 
-- Custom PSG1 Simulator
-- PSG1 Custom Device for Unity Input System
+* PSG1 Button Glyphs
 
-# [1.0.1] 2025-03-21
+## [1.0.6] - 2025-05-12
 
-## Sample Scene
+### Fixed
 
-- New Sample Scene: **PSG1 Input Bindings**
+* Package.json unity version
 
-# [1.0.2] 2025-03-22
+## [1.0.5] - 2025-05-05
 
-## Unity Validator Fix
+### Fixed
 
-- Fix: Unity Asset 100% validated (namespace added)
+* CONTRIBUTING.md Meta file generation to avoid Unity warnings
 
-# [1.0.3] 2025-04-07
+## [1.0.4] - 2025-04-14
 
-- Fix: Viewport Width and Height changes
+### Fixed
 
-# [1.0.4] 2025-04-14
+* Error when building for WebGL
 
-- Fix: Error when building for WebGL
+## [1.0.3] - 2025-04-07
 
-# [1.0.5] 2025-05-05
+### Fixed
 
-- Fix: CONTRIBUTING.md Meta file generation to avoid Unity warnings
+* Viewport Width and Height changes
 
-# [1.0.6] 2025-05-12
+## [1.0.2] - 2025-03-22
 
-- Fix: Package.json unity version
+### Fixed
+
+* Unity Asset 100% validated (namespace added)
+
+## [1.0.1] - 2025-03-21
+
+### Added
+
+* New Sample Scene: PSG1 Input Bindings
+
+## [1.0.0] - 2025-03-20
+
+### Added
+
+* Custom PSG1 Simulator
+* PSG1 Custom Device for Unity Input System
