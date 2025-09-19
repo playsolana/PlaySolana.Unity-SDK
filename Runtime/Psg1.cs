@@ -37,8 +37,8 @@ namespace PlaySolanaSdk {
         [InputControl(name = "dpad/left", bit = (uint)AndroidKeyCode.DpadLeft, variants = Variants.DPadButtons)]
         [InputControl(name = "dpad/right", bit = (uint)AndroidKeyCode.DpadRight, variants = Variants.DPadButtons)]
         [InputControl(name = "buttonSouth", bit = (uint)AndroidKeyCode.ButtonA, variants = Variants.Gamepad, displayName = "B")]
-        [InputControl(name = "buttonWest", bit = (uint)AndroidKeyCode.ButtonY, variants = Variants.Gamepad, displayName = "Y")]
-        [InputControl(name = "buttonNorth", bit = (uint)AndroidKeyCode.ButtonX, variants = Variants.Gamepad, displayName = "X")]
+        [InputControl(name = "buttonWest", bit = (uint)AndroidKeyCode.ButtonX, variants = Variants.Gamepad, displayName = "Y")]
+        [InputControl(name = "buttonNorth", bit = (uint)AndroidKeyCode.ButtonY, variants = Variants.Gamepad, displayName = "X")]
         [InputControl(name = "buttonEast", bit = (uint)AndroidKeyCode.ButtonB, variants = Variants.Gamepad, displayName = "A")]
         [InputControl(name = "leftStickPress", bit = (uint)AndroidKeyCode.ButtonThumbl, variants = Variants.Gamepad, displayName = "L3")]
         [InputControl(name = "rightStickPress", bit = (uint)AndroidKeyCode.ButtonThumbr, variants = Variants.Gamepad, displayName = "R3")]
@@ -98,8 +98,8 @@ namespace PlaySolanaSdk {
     #if UNITY_EDITOR
     [InitializeOnLoad]
     #endif
-    [InputControlLayout(stateType = typeof(PSG1StateController), variants = PSG1StateController.Variants.Gamepad + InputControlLayout.VariantSeparator + PSG1StateController.Variants.DPadButtons)]
-    public class PSG1 : Gamepad {
+    [InputControlLayout(stateType = typeof(PSG1StateController), variants = PSG1StateController.Variants.Gamepad + InputControlLayout.VariantSeparator + PSG1StateController.Variants.DPadAxes)]
+    public class PSG1 : AndroidGamepad  {
 
         #if UNITY_EDITOR
         static PSG1() {
@@ -112,10 +112,10 @@ namespace PlaySolanaSdk {
         private static void Initialize() {
             InputSystem.RegisterLayout<PSG1>(matches: new InputDeviceMatcher()
                     .WithInterface("Android")
-                    .WithProduct("virtual-gamepad")
+                    .WithProduct("psg1_gamepad")
                     .WithCapability("vendorId", 0x1234)
                     .WithCapability("productId", 0x5678)
-                    );
+                );
         }
 
         protected override void FinishSetup() {
